@@ -17,6 +17,7 @@ namespace PersonalWebsite.Controllers
         // GET: Movies
         public ActionResult Index()
         {
+            //Makes a call to the movies table in the database and then passes the information to the index view.
             return View(db.Movies.ToList());
         }
 
