@@ -62,6 +62,7 @@ namespace PersonalWebsite.Controllers
         }
 
         // GET: Movies/Create
+        //Displays the initial create movies view.
         public ActionResult Create()
         {
             return View();
@@ -70,6 +71,7 @@ namespace PersonalWebsite.Controllers
         // POST: Movies/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        //Handles the form post.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
