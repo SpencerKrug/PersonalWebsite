@@ -49,6 +49,7 @@ namespace PersonalWebsite.Controllers
         // GET: Movies/Details/5
         public ActionResult Details(int? id)
         {
+            //Check for a null value to protect the database producing an error.
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -133,6 +134,7 @@ namespace PersonalWebsite.Controllers
         }
 
         // POST: Movies/Delete/5
+        //ActionName("Delete") is included so that the routing can find both the get and post methods for delete.
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
