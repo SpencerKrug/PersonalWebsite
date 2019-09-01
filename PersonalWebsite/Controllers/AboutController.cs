@@ -6,9 +6,10 @@ using System.Web.Mvc;
 
 namespace PersonalWebsite.Controllers
 {
-    public class HomeController : Controller
+    public class AboutController : Controller
     {
-        public ActionResult Index()
+        // GET: About
+        public ActionResult About()
         {
             return View();
         }
