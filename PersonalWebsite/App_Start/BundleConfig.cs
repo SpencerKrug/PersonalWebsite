@@ -25,6 +25,9 @@ namespace PersonalWebsite
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/Site.css"));
+
+            bundles.Add(new StyleBundle("~/Scripts/javascript").Include(
+                "~/Scripts/carousel.js"));
         }
     }
 }
