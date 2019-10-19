@@ -1,7 +1,12 @@
 ﻿@{
     ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+    <body>
+        <h1 style="text-align: center;">@ViewBag.Title</h1>
+
+        <div id="resumeDiv">
+            <embed src="~/Content/(Resume)SpencerKrug10-02-2019 .pdf" width="816px" height="1150px" />
+        </div>
+    </body>
