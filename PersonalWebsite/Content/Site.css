@@ -56,3 +56,12 @@ img {
 #navMain {
     opacity: 0.9;
 }
+
+/*a:link and a:visited are set to white specifically for page navigation.*/
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
