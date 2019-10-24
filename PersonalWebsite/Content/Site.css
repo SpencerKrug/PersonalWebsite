@@ -33,6 +33,7 @@ footer {
     text-align: center;
     background-color: #222;
     color: #9d9d9d;
+    opacity: 0.9;
 }
 
 body #bodyDiv {
@@ -45,4 +46,13 @@ body #bodyDiv {
 
 body #resumeDiv {
     text-align: center;
+}
+
+img {
+    height: 444px !important;
+    width: 1110px !important;
+}
+
+#navMain {
+    opacity: 0.9;
 }
