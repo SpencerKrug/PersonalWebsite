@@ -1,20 +1,23 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Projects & Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<!--Action link for download.-->
-@Html.ActionLink("Download", "Download", "Contact")
+    <body>
+        <h2>@ViewBag.Title</h2>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+        <!--Action link for download.-->
+        <div id="divDownload">
+            <hr />
+            <ul>
+                <li class="list-group-item active" id="liDownload">Java: @Html.ActionLink("Shapes.exe", "Download", "Contact")</li>
+                <li class="list-group-item active" id="liDownload2">C#: TODO</li>
+                <li class="list-group-item active" id="liDownload">C++: TODO</li>
+            </ul>
+        </div>
 
-<address>
-    <strong>Email:</strong>   <a href="mailto:spncrkrug@gmail.com">spncrkrug@gmail.com</a><br />
-    <strong>GitHub:</strong> <a href="https://github.com/SpencerKrug">SpencerKrug</a>
-</address>
+        <address>
+            <strong>Email:</strong>   <a href="mailto:spncrkrug@gmail.com">spncrkrug@gmail.com</a><br />
+            <strong>GitHub:</strong> <a href="https://github.com/SpencerKrug">SpencerKrug</a><br />
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/spencer-krug-86a554161/">SpencerKrug</a>
+        </address>
+    </body>

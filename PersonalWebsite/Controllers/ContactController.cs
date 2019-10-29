@@ -19,7 +19,8 @@ namespace PersonalWebsite.Controllers
             //First parameter is the path to the file.
             //Second parameter is the type of file.
             //Third parameter is the name of the file.
-            return File(Server.MapPath("~/Content/JavaShapes.zip"), "application/zip", "JavaShapes.zip");
+            //https://www.wiley.com/legacy/compbooks/graham/html4ed/appb/mimetype.html
+            return File(Server.MapPath("~/Content/JavaShapes.exe"), "application/octet-stream", "JavaShapes.exe");
         }
     }
 }
