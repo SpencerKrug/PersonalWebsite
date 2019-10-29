@@ -137,8 +137,15 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cabinet-data-data-center-325229.jpg" />
+    <Content Include="Content\emile-perron-xrVDYZRGdw4-unsplash.jpg" />
     <Content Include="Content\IndexBackground.jpg" />
     <Content Include="Content\JavaShapes.exe" />
+    <Content Include="Content\pakata-goh-EJMTKCZ00I0-unsplash.jpg" />
+    <Content Include="Content\ResourcesForWebsite\1.png" />
+    <Content Include="Content\ResourcesForWebsite\2.png" />
+    <Content Include="Content\ResourcesForWebsite\3.png" />
+    <Content Include="Content\ResourcesForWebsite\Links.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
