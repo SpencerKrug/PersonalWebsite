@@ -1,3 +1,10 @@
 ﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    if (Request.Browser.IsMobileDevice == true)
+    {
+        Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
 }

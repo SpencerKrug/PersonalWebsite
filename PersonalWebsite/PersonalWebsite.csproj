@@ -234,6 +234,9 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_ViewSwitcher.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
+    <Content Include="Views\About\AboutMobile.cshtml" />
+    <Content Include="Views\Contact\ContactMobile.cshtml" />
+    <Content Include="Views\Home\IndexMobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

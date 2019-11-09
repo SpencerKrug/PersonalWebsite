@@ -10,7 +10,14 @@ namespace PersonalWebsite.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice == true)
+            {
+                return View("IndexMobile");
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

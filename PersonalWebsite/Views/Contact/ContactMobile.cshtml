@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Projects & Contact";
+}
+
+<body>
+    <h2>@ViewBag.Title</h2>
+
+    <!--Action link for download.-->
+    <div id="divDownload">
+        <hr />
+        <ul>
+            <li class="list-group-item active" id="liDownload">Java: @Html.ActionLink("Shapes.exe", "Download", "Contact")</li>
+            <li class="list-group-item active" id="liDownload2">ASP.NET MVC 5: @Html.ActionLink("KrugDevelopment.dev", "Index", "Home")</li>
+        </ul>
+    </div>
+
+    <address>
+        <strong>Phone:</strong>   <a href="tel:3308443707">330-844-3707</a><br />
+        <strong>Email:</strong>   <a href="mailto:spncrkrug@gmail.com">spncrkrug@gmail.com</a><br />
+        <strong>GitHub:</strong> <a href="https://github.com/SpencerKrug">SpencerKrug</a><br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/spencer-krug-86a554161/">SpencerKrug</a>
+    </address>
+</body>

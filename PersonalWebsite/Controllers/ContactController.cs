@@ -11,7 +11,14 @@ namespace PersonalWebsite.Controllers
         // GET: Contact
         public ActionResult Contact()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice == true)
+            {
+                return View("ContactMobile");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public ActionResult Download()

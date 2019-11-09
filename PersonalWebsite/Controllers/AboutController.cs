@@ -11,7 +11,14 @@ namespace PersonalWebsite.Controllers
         // GET: About
         public ActionResult About()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice == true)
+            {
+                return View("AboutMobile");
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }
