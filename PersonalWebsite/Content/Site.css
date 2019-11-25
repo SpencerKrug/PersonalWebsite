@@ -81,6 +81,11 @@ img {
     width: 1110px !important;
 }
 
+img #resume {
+    max-width: 100%;
+    height: auto;
+}
+
 #navMain {
     opacity: 0.9;
 }
