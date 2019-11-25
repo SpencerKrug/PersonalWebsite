@@ -47,6 +47,8 @@ body #bodyDiv {
 
 body #resumeDiv {
     text-align: center;
+    width: auto;
+    height: auto;
 }
 
 body #divDownload {
