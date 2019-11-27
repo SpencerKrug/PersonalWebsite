@@ -34,6 +34,8 @@ footer {
     background-color: #222;
     color: #9d9d9d;
     opacity: 0.9;
+    /*Z-index makes the footer pop over other elements. Think in terms of 3D programming (x, y, z).*/
+    z-index: 10;
 }
 
 body #bodyDiv {
@@ -55,6 +57,7 @@ body #divDownload {
     margin-right: auto;
     height: 50%;
     width: 50%;
+    word-break: break-word;
 }
 
 body #liDownload {
