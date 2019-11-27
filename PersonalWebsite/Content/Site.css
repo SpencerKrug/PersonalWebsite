@@ -47,8 +47,6 @@ body #bodyDiv {
 
 body #resumeDiv {
     text-align: center;
-    width: auto;
-    height: auto;
 }
 
 body #divDownload {
@@ -79,11 +77,6 @@ body #liDownload2 {
 img {
     height: 444px !important;
     width: 1110px !important;
-}
-
-img #resume {
-    max-width: 100%;
-    height: auto;
 }
 
 #navMain {
