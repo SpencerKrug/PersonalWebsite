@@ -27,7 +27,7 @@ namespace PersonalWebsite.Controllers
             //Second parameter is the type of file.
             //Third parameter is the name of the file.
             //https://www.wiley.com/legacy/compbooks/graham/html4ed/appb/mimetype.html
-            return File(Server.MapPath("~/Content/(Resume)SpencerKrug10-02-2019 .pdf"), "application/pdf", "(Resume)SpencerKrug10-02-2019 .pdf");
+            return File(Server.MapPath("~/Content/(Resume)SpencerKrug11-11-2019.pdf"), "application/pdf", "(Resume)SpencerKrug11-11-2019.pdf");
         }
     }
 }
