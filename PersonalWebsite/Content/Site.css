@@ -1,22 +1,19 @@
-﻿/* GitHub Dark Theme */
-:root {
-    --color-canvas-default: #0d1117;
-    --color-canvas-subtle: #161b22;
-    --color-canvas-inset: #010409;
-    --color-fg-default: #e6edf3;
-    --color-fg-muted: #8b949e;
-    --color-border-default: #30363d;
-    --color-border-muted: #21262d;
-    --color-accent-fg: #58a6ff;
-    --color-accent-emphasis: #1f6feb;
-    --color-btn-bg: #21262d;
-    --color-btn-border: #30363d;
-    --color-btn-hover-bg: #30363d;
-    --color-btn-primary-bg: #238636;
-    --color-btn-primary-border: #2ea043;
-    --color-btn-primary-hover-bg: #2ea043;
-    --color-neutral-emphasis: #6e7681;
-}
+﻿/* GitHub Dark Theme
+   Palette reference:
+   --color-canvas-default:  #0d1117  (page background)
+   --color-canvas-subtle:   #161b22  (secondary surfaces: navbar, jumbotron, inputs)
+   --color-canvas-inset:    #010409  (deeply recessed areas)
+   --color-fg-default:      #e6edf3  (primary text)
+   --color-fg-muted:        #8b949e  (secondary text / footer)
+   --color-border-default:  #30363d  (borders / dividers)
+   --color-accent-fg:       #58a6ff  (links)
+   --color-accent-fg-hover: #79c0ff  (link hover)
+   --color-accent-emphasis: #1f6feb  (focused borders)
+   --color-btn-bg:          #21262d  (default button background)
+   --color-btn-hover-bg:    #30363d  (default button hover background)
+   --color-btn-primary-bg:  #238636  (primary/green button background)
+   --color-btn-primary-border: #2ea043  (primary/green button border and hover background)
+*/
 
 html {
     color-scheme: dark;
@@ -25,8 +22,8 @@ html {
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: var(--color-canvas-default);
-    color: var(--color-fg-default);
+    background-color: #0d1117;
+    color: #e6edf3;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
@@ -48,45 +45,45 @@ input,
 select,
 textarea {
     max-width: 280px;
-    background-color: var(--color-canvas-subtle);
-    color: var(--color-fg-default);
-    border-color: var(--color-border-default);
+    background-color: #161b22;
+    color: #e6edf3;
+    border-color: #30363d;
 }
 
 /* Navbar */
 .navbar-inverse {
-    background-color: var(--color-canvas-subtle);
-    border-color: var(--color-border-default);
+    background-color: #161b22;
+    border-color: #30363d;
 }
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
-    color: var(--color-fg-default);
+    color: #e6edf3;
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: var(--color-accent-fg);
+    color: #58a6ff;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-    background-color: var(--color-canvas-inset);
-    color: var(--color-fg-default);
+    background-color: #010409;
+    color: #e6edf3;
 }
 
 /* Jumbotron */
 .jumbotron {
-    background-color: var(--color-canvas-subtle);
-    color: var(--color-fg-default);
-    border: 1px solid var(--color-border-default);
+    background-color: #161b22;
+    color: #e6edf3;
+    border: 1px solid #30363d;
     border-radius: 6px;
 }
 
 /* Links */
 a {
-    color: var(--color-accent-fg);
+    color: #58a6ff;
 }
 
 a:hover {
@@ -96,84 +93,84 @@ a:hover {
 
 /* Buttons */
 .btn-default {
-    background-color: var(--color-btn-bg);
-    border-color: var(--color-btn-border);
-    color: var(--color-fg-default);
+    background-color: #21262d;
+    border-color: #30363d;
+    color: #e6edf3;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    background-color: var(--color-btn-hover-bg);
-    border-color: var(--color-border-default);
-    color: var(--color-fg-default);
+    background-color: #30363d;
+    border-color: #30363d;
+    color: #e6edf3;
 }
 
 .btn-primary {
-    background-color: var(--color-btn-primary-bg);
-    border-color: var(--color-btn-primary-border);
+    background-color: #238636;
+    border-color: #2ea043;
     color: #ffffff;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: var(--color-btn-primary-hover-bg);
-    border-color: var(--color-btn-primary-border);
+    background-color: #2ea043;
+    border-color: #2ea043;
     color: #ffffff;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-fg-default);
+    color: #e6edf3;
 }
 
 /* Footer */
 footer {
-    border-top: 1px solid var(--color-border-default);
+    border-top: 1px solid #30363d;
     padding-top: 10px;
-    color: var(--color-fg-muted);
+    color: #8b949e;
 }
 
 /* HR */
 hr {
-    border-color: var(--color-border-default);
+    border-color: #30363d;
 }
 
 /* Panels / Cards */
 .panel {
-    background-color: var(--color-canvas-subtle);
-    border-color: var(--color-border-default);
+    background-color: #161b22;
+    border-color: #30363d;
 }
 
 .panel-heading {
-    background-color: var(--color-canvas-inset);
-    border-color: var(--color-border-default);
-    color: var(--color-fg-default);
+    background-color: #010409;
+    border-color: #30363d;
+    color: #e6edf3;
 }
 
 /* Tables */
 table {
-    color: var(--color-fg-default);
+    color: #e6edf3;
 }
 
 .table > thead > tr > th,
 .table > tbody > tr > td {
-    border-color: var(--color-border-default);
+    border-color: #30363d;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: var(--color-canvas-subtle);
+    background-color: #161b22;
 }
 
 /* Form controls */
 .form-control {
-    background-color: var(--color-canvas-subtle);
-    border-color: var(--color-border-default);
-    color: var(--color-fg-default);
+    background-color: #161b22;
+    border-color: #30363d;
+    color: #e6edf3;
 }
 
 .form-control:focus {
-    background-color: var(--color-canvas-subtle);
-    border-color: var(--color-accent-emphasis);
-    color: var(--color-fg-default);
+    background-color: #161b22;
+    border-color: #1f6feb;
+    color: #e6edf3;
     box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.3);
 }
