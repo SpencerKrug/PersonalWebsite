@@ -1,6 +1,30 @@
-﻿body {
+﻿/* GitHub Dark Theme
+   Palette reference:
+   --color-canvas-default:  #0d1117  (page background)
+   --color-canvas-subtle:   #161b22  (secondary surfaces: navbar, jumbotron, inputs)
+   --color-canvas-inset:    #010409  (deeply recessed areas)
+   --color-fg-default:      #e6edf3  (primary text)
+   --color-fg-muted:        #8b949e  (secondary text / footer)
+   --color-border-default:  #30363d  (borders / dividers)
+   --color-accent-fg:       #58a6ff  (links)
+   --color-accent-fg-hover: #79c0ff  (link hover)
+   --color-accent-emphasis: #1f6feb  (focused borders)
+   --color-btn-bg:          #21262d  (default button background)
+   --color-btn-hover-bg:    #30363d  (default button hover background)
+   --color-btn-primary-bg:  #238636  (primary/green button background)
+   --color-btn-primary-border: #2ea043  (primary/green button border and hover background)
+*/
+
+html {
+    color-scheme: dark;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #0d1117;
+    color: #e6edf3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +45,132 @@ input,
 select,
 textarea {
     max-width: 280px;
+    background-color: #161b22;
+    color: #e6edf3;
+    border-color: #30363d;
+}
+
+/* Navbar */
+.navbar-inverse {
+    background-color: #161b22;
+    border-color: #30363d;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+    color: #e6edf3;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #58a6ff;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #010409;
+    color: #e6edf3;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #161b22;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
+/* Links */
+a {
+    color: #58a6ff;
+}
+
+a:hover {
+    color: #79c0ff;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-default {
+    background-color: #21262d;
+    border-color: #30363d;
+    color: #e6edf3;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background-color: #30363d;
+    border-color: #30363d;
+    color: #e6edf3;
+}
+
+.btn-primary {
+    background-color: #238636;
+    border-color: #2ea043;
+    color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #2ea043;
+    border-color: #2ea043;
+    color: #ffffff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #e6edf3;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #30363d;
+    padding-top: 10px;
+    color: #8b949e;
+}
+
+/* HR */
+hr {
+    border-color: #30363d;
+}
+
+/* Panels / Cards */
+.panel {
+    background-color: #161b22;
+    border-color: #30363d;
+}
+
+.panel-heading {
+    background-color: #010409;
+    border-color: #30363d;
+    color: #e6edf3;
+}
+
+/* Tables */
+table {
+    color: #e6edf3;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > td {
+    border-color: #30363d;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #161b22;
+}
+
+/* Form controls */
+.form-control {
+    background-color: #161b22;
+    border-color: #30363d;
+    color: #e6edf3;
+}
+
+.form-control:focus {
+    background-color: #161b22;
+    border-color: #1f6feb;
+    color: #e6edf3;
+    box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.3);
 }
